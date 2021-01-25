@@ -1,0 +1,44 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(8,1fr);
+}
+#header{
+    font-size: 60pt;
+    background-color: gray;
+    grid-row: 1/6;
+    grid-column: 1/2;
+    margin: 0px;
+    position: sticky;
+    float: left;
+}
+#header>p{
+    transform: rotate(270deg);
+}
+#everythingelse{
+    grid-row: 1/6;
+    grid-column: 2/9;
+}
+#seashanties{
+    grid-row: 1/3;
+    grid-column: 2/4;
+    object-fit: cover;
+}
+#seashanties>img{
+    width:25vw ;
+    height:auto;
+    
+}
+#avocado{
+    
+    grid-column: 7/9;
+    grid-row: 1/3;
+    image-resolution: inherit;
+}
+#avocado>img{   
+    width: 25vw;
+    height: auto;
+}
+
